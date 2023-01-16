@@ -1,0 +1,9 @@
+function oddOrEven(array) {
+if (array % 2 === 0){
+  return  'even'
+}
+  else {
+    let sum = array.reduce ((acc , n) => {return acc + n })
+    return (sum % 2 == 0 ) ? 'even' : 'odd'
+  }
+}
